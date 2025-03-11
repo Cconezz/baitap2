@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView hiển thị tên nhân viên -->
+    <TextView
+        android:id="@+id/textViewStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhân viên: Nguyễn Văn A"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button Đổi nhân viên -->
+    <Button
+        android:id="@+id/buttonChangeStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đổi"
+        android:layout_below="@id/textViewStaff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Danh sách sách với checkbox -->
+    <ListView
+        android:id="@+id/listViewBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonChangeStaff"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button Thêm sách -->
+    <Button
+        android:id="@+id/buttonAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_below="@id/listViewBooks"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button Mượn sách -->
+    <Button
+        android:id="@+id/buttonBorrowBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mượn"
+        android:layout_below="@id/listViewBooks"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
